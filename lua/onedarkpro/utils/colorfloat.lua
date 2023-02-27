@@ -142,7 +142,7 @@ function M:update_theme_menu()
   -- Header
   local themes_header = " OneDarkPro.nvim "
   table.insert(hls, { start_pos = string.len(menu_line), end_pos = string.len(themes_header) + string.len(menu_line), hl_name = "TabLineSel" })
-  menu_line = menu_line .. themes_header .. "       "
+  menu_line = menu_line .. themes_header .. "    "
 
   -- theme lists
   for _, theme in pairs(M.themes) do
